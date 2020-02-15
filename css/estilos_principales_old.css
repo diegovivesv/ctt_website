@@ -1,0 +1,1707 @@
+
+/*
+Configuracion de las fuentes
+*/
+@font-face {
+
+    font-family: 'bebas_neueregular';
+
+    src: url('../font/bebas_neue/bebasneue-regular-webfont.woff2') format('woff2');
+    src: local("?"),
+         url('../font/bebas_neue/bebasneue-regular-webfont.woff') format('woff');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+
+    font-family: 'champagne__limousinesregular';
+
+    src: url('../font/champagne_limousines/champagne__limousines-webfont.woff2') format('woff2'),
+
+         url('../font/champagne_limousines/champagne__limousines-webfont.woff') format('woff');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+
+}
+
+
+
+
+@font-face {
+    font-family: 'the_heart_of_everything_demRg';
+    src:url('../font/the_heart_of_everything_demo/the_heart_of_everything_demo-webfont.woff2') format('woff2');
+    src: local("?"),
+         url("../font/the_heart_of_everything_demo/the_heart_of_everything_demo-webfont.ttf") format("truetype"),
+         url('../font/the_heart_of_everything_demo/the_heart_of_everything_demo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+*{margin: 0; padding:0;
+
+	-webkit-box-sizing: border-box;
+
+	-moz-box-sizing: border-box;
+
+	box-sizing: border-box;
+
+}
+
+
+
+body{
+
+  /*background-color: #909090;*/
+  /*background-image: url(../images/fondo_gallery.jpg);*/
+
+  background-position: top;
+}
+
+
+/* PRIMERA PARTE CONTENEDOR=====================================================*/
+#contenedor{
+
+	width: 100%;
+
+	margin: 0 auto;
+
+	background-color: #D5F7F3;
+
+}
+
+
+
+.wrapper{
+
+	width: 100%;
+
+	max-width: 1200px;
+
+	margin: auto;
+
+	overflow: hidden;
+
+}
+
+
+
+header{
+
+	width: 100%;
+
+	background-attachment: scroll;
+
+	background-position: center;
+
+	background-repeat: no-repeat;
+
+	background-size: cover;
+
+	overflow: hidden;
+
+	
+
+}
+
+
+
+header .menus{
+
+	padding-left: 230px;
+
+	width: 100%;
+
+}
+
+
+
+header .menus nav{
+
+	display: block;
+
+	margin-left: 70px;
+
+}
+
+
+
+header .menus nav li{
+
+	float: left;
+
+	list-style: none;
+
+}
+
+
+
+header .menus nav a{
+
+	display: inline-block;
+
+	color: gray;
+
+	text-decoration: none;
+
+	padding: 10px 30px;
+
+	font-family: 'bebas_neueregular';
+
+	font-size: 16px;
+
+	-webkit-transition:all 500ms ease;
+
+	-o-transition:all 500ms ease;
+
+	transition:all 500ms ease;
+
+	list-style: none;
+
+}
+
+
+
+header .menus nav a:hover{
+
+  color: RGB(0,125,125);
+}
+
+
+
+.menu-fixed{
+
+	position:fixed;
+
+	z-index:1000;
+
+	top:0;
+
+	max-width:700px;
+
+  /* ancho de fondo del menu flotante*/
+	justify-content: center;
+
+	align-items: center;
+
+	background: #DADEDB;
+
+	/* color de fuente FFA0D5 */
+
+	/*left:0;*/
+
+	/*Podemos hacer que el menu abarque el 100% al hacer scroll*/
+
+	width:100%;
+
+}
+
+
+
+
+
+header .titulo_principal{
+
+	/*margin-left: 400px;
+*/
+  align-items: center;
+}
+
+
+
+header .titulo_principal h2{
+
+  	font-family: 'the_heart_of_everything_demRg';
+  	font-size: 85px;
+	color: gray;
+  	font-style: normal;
+  	font-weight: lighter;
+  	align-items: center;
+}
+
+/* SECCION CARRUSEL=========================================================*/
+
+.carrusel{
+	width: 95%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.carrusel ul{
+	display: flex;
+	padding: 0;
+	width: 400%;
+
+	animation: cambio 20s infinite alternate linear;
+}
+
+.carrusel li{
+	width: 100%;
+	list-style: none;
+}
+
+.carrusel img{
+	width: 100%;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20%{margin-left: 0;}
+
+	25%{margin-left: -100%;}
+	45%{margin-left: -100%;}
+
+	50%{margin-left: -200%;}
+	70%{margin-left: -200%;}
+
+	75%{margin-left: -300%;}
+	100%{margin-left: -300%;}
+}
+
+
+/* SECCION INTRODUCCION =====================================================*/
+
+#introduccion{
+    justify-content: justify;
+	align-items: justify;
+	width: 100%;
+	height: 580px;
+	background: #FAFBFF;
+	margin: 0;
+}
+
+
+
+#introduccion .contenedor_introduccion{
+	align-items: justify;
+	justify-content: justify;
+	height: 530px;
+	padding-top: 50px;
+}
+
+
+#introduccion .contenedor_introduccion .parrafo_introductorio_introduccion{
+	float: left;
+	width: 45%;
+	height: 380px;
+	margin: 23px 20px;
+	font-family: 'arial';
+}
+
+#introduccion .contenedor_introduccion .parrafo_introductorio_introduccion .parrafo_introductorio_introduccion_big{
+	float: left;
+	font-family: 'champagne__limousinesregular' ;
+	font-size: 40px;
+	color: rgb(130,130,130);
+}
+
+
+#introduccion .contenedor_introduccion .parrafo_introductorio_introduccion .parrafo_introductorio_introduccion_mid{
+	font-family: 'champagne__limousinesregular';
+	font-size: 25px;
+	text-align: left;
+	color: rgb(130,130,130);
+}
+
+#introduccion .contenedor_introduccion .parrafo_introductorio_introduccion .parrafo_introductorio_introduccion_low{
+	font-family: 'champagne__limousinesregular';
+	font-size: 15px;
+	text-align: justify;
+	color: rgb(130,130,130);
+}
+
+#introduccion .contenedor_introduccion .parrafo_introductorio_introduccion .parrafo_introductorio_introduccion_low_light{
+	font-family: 'champagne__limousinesregular';
+	font-size: 15px;
+	text-align: justify;
+	font-style: italic;
+	color: rgb(130,130,130);
+}
+
+#introduccion .contenedor_introduccion .parrafo_introductorio_introduccion .parrafo_introductorio_introduccion_mid_betsy{
+	font-family: 'the_heart_of_everything_demRg';
+	font-size: 25px;
+	text-align: left;
+	color: rgb(130,130,130);
+}
+
+#introduccion .contenedor_introduccion .logo_ctt_introduccion{
+	float: right;
+	width: 30%;
+	height: 350px;
+	margin-top: 55px;
+	margin-right: 150px;
+}
+
+#introduccion .contenedor_introduccion .logo_ctt_introduccion img{
+	width: 300px;
+	height: 300px;
+	margin-left: 40px;
+}
+
+
+
+/* SECCION SEPARACION ===================================================== */
+
+#servicio-de-pedido{
+
+	width: 100%;
+
+	height: 550px;
+
+	background: #FAFBFF;
+
+	margin: 0;
+
+	background: url(https://i.ibb.co/Xj55Ywy/fondo-flores2.jpg);
+
+	background-color: #DCDAFF;
+
+	background-attachment: scroll;
+
+	background-position: center;
+
+	background-repeat: no-repeat;
+
+	background-size: cover;
+
+	overflow: hidden;
+
+}
+
+
+
+#servicio-de-pedido .contenedor_servicio-de-pedido{
+
+	align-items: center;
+
+	justify-content: center;
+
+	padding-top: 50px;
+
+}
+
+
+#servicio-de-pedido .contenedor_servicio-de-pedido .parrafo_servicio-de-pedido-2{
+
+
+	font-family: 'arial';
+
+	float: center;
+    justify-content: center;
+	width: 80%;
+
+	text-align: justify;
+
+	font-size: 15px;
+
+	font-family: 'champagne__limousinesregular';
+	
+	margin-left : 50px;
+}
+
+
+
+#servicio-de-pedido .contenedor_servicio-de-pedido .parrafo_servicio-de-pedido-2 h3{
+
+	 font-family: 'the_heart_of_everything_demRg';
+
+	 font-size: 30px;
+
+}
+
+
+/* separación */
+
+
+#pedidos-bdd{
+
+	width: 100%;
+
+	height:400px;
+
+	background-color: #e6fcfa;
+
+}
+
+
+
+#pedidos-bdd .contenedor-pedidos{
+
+	padding-top: 50px
+
+}
+
+
+
+#pedidos-bdd .introduccion_pedidos{
+
+	text-align: center;
+
+	margin-top: 10px;
+
+}
+
+
+
+#pedidos-bdd .introduccion_pedidos h2{
+
+	font-family: 'the_heart_of_everything_demRg';
+
+	color: black;
+
+	font-size: 40px;
+
+}
+
+
+
+#pedidos-bdd .introduccion_pedidos p{
+
+	font-family: 'arial';
+
+	color: black;
+
+	margin-top: 10px;
+
+}
+
+
+
+#pedidos-bdd .contenedor_pedidos-bdd{
+
+	align-items: center;
+
+	justify-content: center;
+
+	height: 150px;
+
+	font-family: 'arial';
+
+	font-size: 14.5px;
+
+	margin-top: 20px;
+
+	margin-left: 20px;
+
+}
+
+
+
+#pedidos-bdd .contenedor_pedidos-bdd .pasos_pedidos-bdd{
+
+	width: 1200px;
+
+	height: 50px;
+
+}
+
+
+
+#pedidos-bdd .contenedor_pedidos-bdd .pasos_pedidos-bdd .paso1{
+
+	width: 300px;
+
+	height: 50px;
+
+	float: left;
+
+}
+
+
+
+#pedidos-bdd .contenedor_pedidos-bdd .pasos_pedidos-bdd .paso1 img{
+
+	width: 50px;
+
+	height: 50px;
+
+	float: left;
+
+}
+
+
+
+#pedidos-bdd .contenedor_pedidos-bdd .pasos_pedidos-bdd .paso1 p{
+
+	float: left;
+
+	margin:10px 0 0 10px;
+
+	color: color;
+
+}
+
+
+
+#pedidos-bdd .contenedor_pedidos-bdd .pasos_pedidos-bdd .paso2{
+
+	width: 400px;
+
+	height: 50px;
+
+	float: left;
+
+}
+
+
+
+#pedidos-bdd .contenedor_pedidos-bdd .pasos_pedidos-bdd .paso2 img{
+
+	width: 50px;
+
+	height: 50px;
+
+	float: left;
+
+}
+
+
+
+#pedidos-bdd .contenedor_pedidos-bdd .pasos_pedidos-bdd .paso2 p{
+
+	float: left;
+
+	margin:10px 0 0 10px;
+
+	color: black;
+
+}
+
+
+
+#pedidos-bdd .contenedor_pedidos-bdd .pasos_pedidos-bdd .paso3{
+
+	width: 500px;
+
+	height: 50px;
+
+	float: left;
+
+}
+
+
+
+#pedidos-bdd .contenedor_pedidos-bdd .pasos_pedidos-bdd .paso3 img{
+
+	width: 50px;
+
+	height: 50px;
+
+	float: left;
+
+}
+
+
+
+#pedidos-bdd .contenedor_pedidos-bdd .pasos_pedidos-bdd .paso3 p{
+
+	float: left;
+
+	margin: 10px 0 0 10px;
+
+	color: black;
+
+	width: 430px;
+
+}
+
+
+
+#pedidos-bdd .contenedor_pedidos-bdd .boton-link_pedidos-bdd{
+
+	width: 40px;
+
+	height: 10px;
+
+	margin-left: 530px;
+
+}
+
+
+
+#pedidos-bdd .contenedor_pedidos-bdd .boton-link_pedidos-bdd input[type=submit]{
+
+	width:150px;
+
+	height:40px;
+
+	border-radius:20px;
+
+	border:0px;
+
+	background-color:#FFC9D3;
+
+	color: black;
+
+	font: 14px normal normal uppercase helvetica, arial, serif;
+
+}
+
+
+
+
+/*
+
+
+		FALTA UN DATO DEL INPUT
+
+		% COLOCAR EN ESTE ESPACIO %
+
+*/
+
+
+/* GALERIA */
+
+
+
+#galeria{
+
+	height: 800px;
+
+	width: 100%;
+
+	font-family: 'arial';
+
+}
+
+
+
+.wrapper-galeria{
+
+	width: 100%;
+
+	max-width: 100%;
+
+	margin: auto;
+
+	overflow: hidden;
+
+}
+
+
+
+.wrap{
+
+	max-width: 1400px;
+
+	width: 100%;
+
+	margin: auto;
+
+	padding-top: 50px;
+
+}
+
+
+
+.wrap > h1{
+
+	color: rgb(156,156,156);
+
+  font-weight: lighter;
+	/*display: flex;
+        /*linea pespunteada horizontal*/
+	/*flex-direction: column;
+*/
+	text-align: left;
+
+  margin-top: 0px;
+  margin-left: 100px;
+  margin-bottom: 10px;
+	font-size: 50px;
+
+	font-family: 'the_heart_of_everything_demRg';
+
+}
+
+
+
+.wrap > h1:after{
+
+	content: '';
+
+	width: 100%;
+
+	height: 1px;
+
+	background: #C7C7C7;
+
+	margin: 20px 0;
+
+}
+
+
+
+.store-wrapper{
+
+	display: flex;
+
+	flex-wrap: wrap;
+
+}
+
+
+
+.category_list{
+
+	display: flex;
+
+  margin-left: 40px; /*separacion del menu de galeria desde el margen izquierdo*/
+	flex-direction: column;
+
+	width: 16%;
+ /* ancho de botones del menu galeria */
+	font-family: 'champagne__limousinesregular';
+
+}
+
+
+
+.category_list .category_item{
+
+	display: block;
+
+	width: 90%;
+
+	padding: 15px 0;
+
+	margin-bottom: 20px;
+
+	background:#FFC9D3;
+
+
+	text-align: center;
+
+	text-decoration: none;
+
+	color: black;
+
+}
+
+
+
+.category_list .ct_item-active{
+
+	background: #e6fcfa;
+
+}
+
+
+
+/* PRODUCTOS ============*/
+
+
+.products-list{
+
+	width: 70%;
+
+	display: flex;
+
+	flex-wrap: wrap;
+
+}
+
+
+
+
+.products-list .product-item{
+
+	width: 15%;
+
+	margin-left: 3%;
+
+	margin-bottom: 25px;
+
+	box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.22);
+
+
+  display: flex;
+
+	flex-direction: column;
+
+	align-items: center;
+
+	align-self: flex-start;
+
+
+  transition: all .4s;
+
+}
+
+
+
+.products-list .product-item img{
+
+	width: 100%;
+
+	transition: 1s;
+
+}
+
+
+
+.products-list .product-item img:hover{
+
+	transform: scale(1.1);
+
+}
+
+
+
+.products-list .product-item a{
+
+	display: block;
+
+	width: 100%;
+
+	text-align: center;
+
+	text-decoration: none;
+
+}
+
+
+
+
+/* FINAL DE GALERIA */
+
+
+/* INICIO DISEÑO-INTRODUCCION */
+
+
+#diseño-introduccion{
+
+	width: 100%;
+
+	height: 350px;
+
+	background-color: #E5FFFA;
+
+
+}
+
+
+
+#diseño-introduccion .contenedor-DI{
+
+	align-items: center;
+
+	justify-content: center;
+
+	font-family: 'champagne__limousinesregular';
+
+	height: 250px;
+
+	font-size: 14.5px;
+
+	padding-top: 60px;
+
+
+}
+
+
+
+#diseño-introduccion .contenedor-DI .imgkekitos{
+  width: 100px;
+  height: 100px;
+}
+
+#diseño-introduccion .parte-diseño{
+
+	width: 50%;
+
+	height: 250px;
+
+	float: left;
+
+	text-align: center;
+
+/*	border-top:0px solid #ffffff;
+
+	border-right:2px dotted #9fa3a4;
+
+	border-bottom:0px solid #ffffff;
+
+	border-left:0px solid #ffffff;
+*/
+
+}
+
+
+
+#diseño-introduccion .parte-diseño h2{
+
+	margin-top: 50px;
+
+	 font-family: 'the_heart_of_everything_demRg';
+
+	 font-size: 30px;
+
+}
+
+
+
+#diseño-introduccion .parte-diseño p{
+
+	margin: 10px;
+
+}
+
+
+
+#diseño-introduccion .parte-ingredientes{
+
+	width: 50%;
+
+	height: 250px;
+
+	float: left;
+
+	text-align: center;
+
+}
+
+
+
+#diseño-introduccion .parte-ingredientes h2{
+
+	margin-top: 50px;
+
+	font-family: 'the_heart_of_everything_demRg';
+
+	 font-size: 30px;
+
+}
+
+
+
+#diseño-introduccion .parte-ingredientes p{
+
+	margin: 10px;
+
+}
+
+
+
+/* FIN DE DISEÑO E INGREDIENTES  */
+
+
+/* COMIENZO DE SABORES Y RELLENOS */
+
+
+.sabores-rellenos{
+
+	width: 100%;
+
+	height: 320px;
+
+	font-family: 'champagne__limousinesregular';
+
+	background-color: #E5FFFA;
+
+}
+
+.sabores-rellenos .contenedor-SR .titulo-SR{
+	margin-right:auto;
+	height: 50px;
+}
+
+.sabores-rellenos .contenedor-SR .titulo-SR h2{
+	text-align: center;
+	justify-content: center;
+}
+
+.sabores-rellenos .contenedor-SR .listas-SR{
+	width: 100%;
+	height: 270px;
+}
+
+.sabores-rellenos .contenedor-SR .listas-SR .lista-1{
+	width: 25%;
+	height: 100%;
+	float: left
+}
+
+.sabores-rellenos .contenedor-SR .listas-SR .lista-1 ul{
+	margin-top: 55px;
+}
+
+.sabores-rellenos .contenedor-SR .listas-SR .lista-1 ul li{
+	list-style: none;
+	font-size: 25px;
+	margin-top: 15px;
+}
+
+.sabores-rellenos .contenedor-SR .listas-SR .lista-2 h3{
+	font-size: 30px;
+	font-family: 'the_heart_of_everything_demRg';
+}
+
+.sabores-rellenos .contenedor-SR .listas-SR .lista-2{
+	width: 25%;
+	height: 100%;
+	float: left
+}
+
+.sabores-rellenos .contenedor-SR .listas-SR .lista-2 ul{
+	margin-top: 25px;
+}
+
+.sabores-rellenos .contenedor-SR .listas-SR .lista-2 ul li{
+	list-style: none;
+	font-size: 25px;
+	margin-top: 10px;
+}
+
+.sabores-rellenos .contenedor-SR .listas-SR .lista-2b{
+	width: 25%;
+	height: 100%;
+	float: left
+}
+
+.sabores-rellenos .contenedor-SR .listas-SR .lista-2b ul{
+	margin-top: 55px;
+}
+
+.sabores-rellenos .contenedor-SR .listas-SR .lista-2b ul li{
+	list-style: none;
+	font-size: 25px;
+	margin-top: 15px;
+}
+
+.sabores-rellenos .contenedor-SR .listas-SR .lista-3{
+	width: 25%;
+	height: 100%;
+	float: left
+}
+
+.sabores-rellenos .contenedor-SR .listas-SR .lista-3 h3{
+	font-size: 30px;
+	font-family: 'the_heart_of_everything_demRg';
+}
+
+.sabores-rellenos .contenedor-SR .listas-SR .lista-3{
+	width: 25%;
+	height: 100%;
+	float: left
+}
+
+.sabores-rellenos .contenedor-SR .listas-SR .lista-3 ul{
+	margin-top: 25px;
+}
+
+.sabores-rellenos .contenedor-SR .listas-SR .lista-3 ul li{
+	list-style: none;
+	font-size: 25px;
+	margin-top: 10px;
+}
+
+
+
+/* FIN DE SABORES Y RELLENOS */
+
+
+
+/* COMIENZO DE PORCIONES*/
+
+
+.porciones{
+
+	width: 100%;
+
+	height: 350px;
+
+	background-color: #E5FFFA;
+
+}
+
+
+
+.porciones .contenedor-porciones{
+
+	width: 100%;
+
+	height: 270px;
+
+}
+
+
+
+.porciones .contenedor-porciones .titulo-p{
+
+	text-align: left;
+
+	margin-bottom: 10px;
+	margin-left: 50px;
+
+	font-family: 'the_heart_of_everything_demRg';
+
+}
+
+
+
+.porciones .contenedor-porciones .listado-1{	
+
+	width: 48%;
+
+	height: 270px;
+
+	float: left;
+
+	margin: 10px;
+
+	/*border-top:0px solid #a2aaab;
+
+	border-right:1px dashed #a2aaab;
+
+	border-bottom:0px solid #a2aaab;
+
+	border-left:0px solid #a2aaab;
+*/
+	padding-right: 50px;
+
+
+}
+
+
+
+.porciones .contenedor-porciones .listado-2{
+
+	width: 45%;
+
+	height: 270px;
+
+	float:left;
+	
+	
+
+}
+
+
+
+.porciones .contenedor-porciones{
+
+	text-align: left;
+
+	font-size: 20px;
+
+	width: 100%;
+
+	font-family: 'champagne__limousinesregular';
+
+}
+
+
+
+.porciones .contenedor-porciones .listado-1 p{
+
+	font-size: 20px;
+
+}
+
+
+
+.porciones .contenedor-porciones .listado-2 p{
+
+	text-align: center;
+
+}
+
+
+
+.porciones .contenedor-porciones .listado-2 .parrafo-margen{
+
+	text-align: center;
+
+	margin-bottom: 15px;
+
+}
+
+
+
+.porciones .contenedor-porciones .listado-2 ul li{
+
+	list-style: none;
+
+	text-align: center;
+
+}
+
+
+/* FIN DE ´PORCIONES  */
+
+/* -------FORMULARIO------------------------------------------------------------------------------------------------------------------- */
+
+.lista-instagram{
+
+	width: 100%;
+
+	height: 500px;
+
+
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: 150px;
+	padding-right: 150px;
+
+	display: inline-block;
+
+	background-color: white;
+
+}
+
+.lista-instagram .titulo-insta{
+	width: 100%;
+	height: 100px;
+
+}
+
+
+.lista-instagram .titulo-insta p{
+	justify-content: right;
+	align-items: right;
+	font-family: 'champagne__limousinesregular';
+	color: gray;
+	font-size: 50px;
+	display: flex;
+	padding-top: 30px;
+	text-decoration: none;
+
+}
+
+.lista-instagram .lista-10{
+
+	width: 192px;
+
+	height: 192px;
+
+	border: 1px solid #A58756;
+
+	padding: 20px;
+
+	margin: 20px;
+
+	display: inline-block;
+
+	background-attachment: scroll;
+
+	background-position: center;
+
+	background-repeat: no-repeat;
+
+	background-size: cover;
+
+}
+
+
+
+
+.lista-instagram .lista-20{
+
+	width: 192px;
+
+	height: 192px;
+
+	border: 1px solid #A58756;
+
+	padding: 20px;
+
+	margin: 20px;
+
+	display: inline-block;
+
+	background-attachment: scroll;
+
+	background-position: center;
+
+	background-repeat: no-repeat;
+
+	background-size: cover;
+
+	
+
+}
+
+
+.lista-instagram .lista-30{
+
+	width: 192px;
+
+	height: 192px;
+
+	border: 1px solid #A58756;
+
+	padding: 20px;
+
+	margin: 20px;
+
+	display: inline-block;
+
+	background-attachment: scroll;
+
+	background-position: center;
+
+	background-repeat: no-repeat;
+
+	background-size: cover;
+
+
+}
+
+.lista-instagram .lista-40{
+
+	width: 192px;
+
+	height: 192px;
+
+	border: 1px solid #A58756;
+
+	padding: 20px;
+
+	margin: 20px;
+
+	display: inline-block;
+
+	background-attachment: scroll;
+
+	background-position: center;
+
+	background-repeat: no-repeat;
+
+	background-size: cover;
+
+}
+/* -------FORMULARIO------------------------------------------------------------------------------------------------------------------- */
+
+/* COMIENZO DE FOOTER */
+
+
+footer{
+
+	width: 100%;
+
+	height: 300px;
+
+	background-color: #e6fcfa;
+
+}
+
+
+
+footer .contenedor-PDP{
+
+	height: 280px;
+
+	width: 100%;
+
+	display: flex;
+
+	justify-content: space-between;
+
+	list-style: none;
+
+}
+
+
+
+footer .contenedor-PDP .lista1-PDP{
+
+	width: 33.3%;
+
+	height: 280px;
+
+	background-color:#e6fcfa;
+
+	float: left;
+
+	list-style: none;
+
+}
+
+
+
+footer .contenedor-PDP .lista1-PDP ul{
+
+	text-align: center;
+
+	padding-top: 20px;
+
+	font-family: 'champagne__limousinesregular';
+
+	font-size: 20px;
+
+	list-style: none;
+
+}
+
+footer .contenedor-PDP .lista1-PDP ul .parrafo-1-f{
+	margin-top: 50px;
+}
+
+footer .contenedor-PDP .lista2-PDP{
+
+	width: 33.3%;
+
+	height: 280px;
+
+	background-color: #e6fcfa;
+
+	float: left;
+
+	padding: 20px 0 0 50px;
+
+	font-family: 'champagne__limousinesregular';
+
+}
+
+
+
+footer .contenedor-PDP .lista2-PDP h1{
+
+	font-size: 30px;
+
+}
+
+
+
+footer .contenedor-PDP .lista2-PDP .row{
+
+	margin-top: 20px;
+
+	display: flex;
+
+}
+
+
+
+footer .contenedor-PDP .lista2-PDP .row img{
+
+	width: 36px;
+
+	height: 36px;
+
+}
+
+
+
+footer .contenedor-PDP .lista2-PDP .row label{
+
+	margin-top: 10px;
+
+	margin-left: 20px;
+
+	color: black;
+
+}
+
+
+
+footer .contenedor-PDP .lista3-PDP{
+
+	width: 33.3%;
+
+	height: 280px;
+
+	background-color: #e6fcfa;
+
+	float: left;
+
+	font-family: 'champagne__limousinesregular';
+
+	margin: 20px 0 0 40px;
+
+
+}
+
+
+
+footer .contenedor-PDP .lista3-PDP h1{
+
+	font-size: 30px;
+
+}
+
+
+
+footer .contenedor-PDP .lista3-PDP .row2{
+
+	margin-top: 20px;
+
+	display: flex;
+
+}
+
+
+
+footer .contenedor-PDP .lista3-PDP .row2 img{
+
+	width: 36px;
+
+	height: 36px;
+
+}
+
+
+
+footer .contenedor-PDP .lista3-PDP .row2 label{
+
+	margin-top: 10px;
+
+	margin-left: 20px;
+
+	max-width: 140px;
+
+}
+
+
+
+/* PARTE RESPONSIVE EN TAMAÑO 1096PX */
+
+
+@media screen and (max-width: 1096px) {
+
+
+	.wrapper{
+
+	 	width: 100%;
+
+	 	margin: auto;
+
+		overflow: hidden;
+
+	 }
+
+
+	header .menus{
+
+		padding-left: 70px;
+
+	}
+
+
+
+
+	header .menus{
+
+		padding-left: 0;
+
+		margin-left: 0;
+
+	}
+
+
+  }
+
+
+
+  #pedidos-bdd .contenedor_pedidos-bdd .boton-link_pedidos-bdd{
+
+		margin-left: 440px;
+
+	}
+
+
+
+	#pedidos-bdd .contenedor_pedidos-bdd .pasos_pedidos-bdd .paso3 p{
+
+	float: left;
+
+	margin: 10px 0 0 10px;
+
+	color: black;
+
+	width: 300px;
+
+	}
+
+
+
+	footer .contenedor-PDP{
+
+	padding-left: 50px;
+
+	}
+
+
+
+	.porciones .contenedor-porciones{
+
+	padding-left: 50px;
+
+	}
+
+
+
+	.sabores-rellenos .contenedor-SR{
+
+	padding-left: 50px;
+
+
+   }
+
+
+
+
+@media screen and (max-width: 1022px){
+
+
+
+
+}
+
+/* Menu lateral izquierdo opciones redes sociales */
+.sticky-container{
+    padding:0px;
+    margin:0px;
+    position:fixed;
+    right:-130px;
+    top:230px;
+    width:210px;
+    z-index: 1100;
+}
+.sticky li{
+    list-style-type:none;
+    background-color: #fff;
+	border-bottom-style : solid;
+    color:#efefef;
+    height:43px;
+    padding:0px;
+    margin:0px 0px 1px 0px;
+    -webkit-transition:all 0.25s ease-in-out;
+    -moz-transition:all 0.25s ease-in-out;
+    -o-transition:all 0.25s ease-in-out;
+    transition:all 0.25s ease-in-out;
+    cursor:pointer;
+}
+.sticky li:hover{
+    margin-left:-115px;
+}
+.sticky li img{
+    float:left;
+    margin:5px 4px;
+    margin-right:5px;
+}
+.sticky li p{
+    padding-top:5px;
+    margin:0px;
+    line-height:16px;
+    font-size:11px;
+}
+.sticky li p a{
+    text-decoration:none;
+    color:#2C3539;
+}
+.sticky li p a:hover{
+    text-decoration:underline;
+}

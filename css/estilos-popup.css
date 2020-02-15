@@ -1,0 +1,510 @@
+@font-face {
+
+    font-family: 'bebas_neueregular';
+
+    src: url('../font/bebas_neue/bebasneue-regular-webfont.woff2') format('woff2');
+    src: local("?"),
+         url('../font/bebas_neue/bebasneue-regular-webfont.woff') format('woff');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+}
+
+@font-face {
+
+    font-family: 'champagne__limousinesregular';
+
+    src: url('../font/champagne_limousines/champagne__limousines-webfont.woff2') format('woff2'),
+
+         url('../font/champagne_limousines/champagne__limousines-webfont.woff') format('woff');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+
+}
+
+
+
+
+@font-face {
+    font-family: 'the_heart_of_everything_demRg';
+    src:url('../font/the_heart_of_everything_demo/the_heart_of_everything_demo-webfont.woff2') format('woff2');
+    src: local("?"),
+         url("../font/the_heart_of_everything_demo/the_heart_of_everything_demo-webfont.ttf") format("truetype"),
+         url('../font/the_heart_of_everything_demo/the_heart_of_everything_demo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+*{margin: 0; padding:0;
+
+	-webkit-box-sizing: border-box;
+
+	-moz-box-sizing: border-box;
+
+	box-sizing: border-box;
+
+}
+
+
+
+body{
+
+  /*background-color: #909090;*/
+  background-position: top;
+}
+
+
+/* PRIMERA PARTE CONTENEDOR=====================================================*/
+#contenedor{
+
+	width: 100%;
+
+	margin: 0 auto;
+
+}
+
+
+
+.wrapper{
+
+	width: 100%;
+
+	max-width: 1200px;
+
+	margin: auto;
+
+	overflow: hidden;
+
+}
+
+
+
+header{
+
+	width: 100%;
+
+	background-color: #D5F7F3;
+
+	background-attachment: scroll;
+
+	background-position: center;
+
+	background-repeat: no-repeat;
+
+	background-size: cover;
+
+	overflow: hidden;
+
+
+
+}
+
+
+
+header .menus{
+
+	padding-left: 230px;
+
+	width: 100%;
+
+}
+
+
+
+header .menus nav{
+
+	display: block;
+
+	margin-left: 70px;
+
+}
+
+
+
+header .menus nav li{
+
+	float: left;
+
+	list-style: none;
+
+}
+
+
+
+header .menus nav a{
+
+	display: inline-block;
+
+	color: gray;
+
+	text-decoration: none;
+
+	padding: 10px 30px;
+
+	font-family: 'bebas_neueregular';
+
+	font-size: 16px;
+
+	-webkit-transition:all 500ms ease;
+
+	-o-transition:all 500ms ease;
+
+	transition:all 500ms ease;
+
+	list-style: none;
+
+}
+
+
+
+header .menus nav a:hover{
+
+  color: RGB(0,125,125);
+}
+
+
+
+.menu-fixed{
+
+	position:fixed;
+
+	z-index:1000;
+
+	top:0;
+
+	max-width:700px;
+
+  /* ancho de fondo del menu flotante*/
+	justify-content: center;
+
+	align-items: center;
+
+	background: #DADEDB;
+
+	/* color de fuente FFA0D5 */
+
+	/*left:0;*/
+
+	/*Podemos hacer que el menu abarque el 100% al hacer scroll*/
+
+	width:100%;
+
+}
+
+
+
+
+
+header .titulo_principal{
+
+  align-items: center;
+}
+
+
+
+header .titulo_principal h2{
+
+  font-family: 'the_heart_of_everything_demRg';
+
+  font-size: 85px;
+
+	color: gray;
+
+  font-style: normal;
+
+  font-weight: lighter;
+
+  align-items: center;
+
+}
+
+
+
+/* -------FORMULARIO------------------------------------------------------------------------------------------------------------------- */
+
+.lista-informacion{
+
+	width: 100%;
+
+	height: 400px;
+
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: 150px;
+	padding-right: 150px;
+
+	display: inline-block;
+}
+
+
+
+.lista-informacion .lista-1{
+
+	width: 245px;
+
+	height: 245px;
+
+	border: 1px solid #A58756;
+
+	padding: 10px;
+
+	margin: 20px;
+
+	display: inline-block;
+
+	
+
+}
+
+.lista-informacion .lista-1 ul li{
+	list-style: none;
+	
+}
+
+.lista-informacion .lista-1 ul .lista-1-imagen{
+	width: 100%;
+
+	height: 174.75px;
+
+	background-image: url(../images/iconos-rs/telefono.png);
+
+}
+
+.lista-informacion .lista-1 ul .lista-1-parrafo{
+
+	width: 100%;
+
+	height: 29.125px;
+
+	text-align: center;
+
+	align-items: center;
+
+}
+
+
+.lista-informacion  ul li p{
+
+	font-size: 20px;
+	font-family: 'champagne__limousinesregular';
+
+}
+
+.lista-informacion .lista-1 ul .lista-1-parrafo2{
+
+	width: 100%;
+
+	height: 29.125px;
+
+	text-align: center;
+
+	align-items: center;
+
+}
+
+
+.lista-informacion .lista-2{
+
+	width: 245px;
+
+	height: 245px;
+
+	border: 1px solid #A58756;
+
+	padding: 10px;
+
+	margin: 20px;
+
+	display: inline-block;
+
+	list-style: none;
+
+}
+
+.lista-informacion .lista-2 ul li{
+
+	list-style: none;
+
+}
+
+.lista-informacion .lista-2 ul .lista-2-imagen2{
+
+	width: 100%;
+
+	height: 174.75px;
+
+	background-image: url(../images/iconos-rs/correo.png);
+
+}
+
+.lista-informacion .lista-2 ul .lista-2-parrafo2{
+
+	width: 100%;
+
+	height: 29.125px;
+
+	text-align: center;
+
+	align-items: center;
+
+}
+
+.lista-informacion .lista-2 ul .lista-2-parrafo22{
+
+	width: 100%;
+	height: 29.125px;
+	text-align: center;
+	align-items: center;
+
+}
+
+
+.lista-informacion .lista-3{
+
+	width: 245px;
+
+	height: 245px;
+
+	border: 1px solid #A58756;
+
+	padding: 10px;
+
+	margin: 20px;
+
+	display: inline-block;
+
+	list-style: none;
+
+}
+
+.lista-informacion .lista-3 ul li{
+	list-style: none;
+}
+
+.lista-informacion .lista-3 ul .lista-3-imagen3{
+	width: 100%;
+	height: 174.75px;
+	background-image: url(../images/iconos-rs/ubicacion.png);
+}
+
+.lista-informacion .lista-3 ul .lista-3-parrafo3{
+
+	width: 100%;
+	height: 29.125px;
+	text-align: center;
+	align-items: center;
+}
+
+.lista-informacion .lista-3 ul .lista-3-parrafo33{
+
+	width: 100%;
+	height: 29.125px;
+	text-align: center;
+	align-items: center;
+
+}
+
+.lista-informacion .lista-4{
+
+	width: 245px;
+
+	height: 245px;
+
+	border: 1px solid #A58756;
+
+	padding: 10px;
+
+	margin: 20px;
+
+	display: inline-block;
+
+	list-style: none;
+
+}
+
+.lista-informacion .lista-4 ul li{
+	list-style: none;
+}
+
+.lista-informacion .lista-4 ul .lista-4-imagen4{
+	width: 100%;
+	height: 174.75px;
+	background-image: url(../images/iconos-rs/horario.png);
+}
+
+.lista-informacion .lista-4 ul .lista-4-parrafo4{
+
+	width: 100%;
+	height: 29.125px;
+	text-align: center;
+	align-items: center;
+}
+
+.lista-informacion .lista-4 ul .lista-4-parrafo44{
+
+	width: 100%;
+	height: 29.125px;
+	text-align: center;
+	align-items: center;
+
+}
+
+/* -------FORMULARIO------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+.form{
+	position:relative;
+	width:500px;
+	height:600px;
+	padding-left: 20px;
+	padding-top: 15px;
+	background-color:#fde0ff;
+	border-radius: 20px;
+	margin:auto;
+}
+
+input[type=text],[type=email]{
+	width:470px;
+	height:35px;
+	font: 14px normal normal uppercase helvetica, arial, serif;  
+}
+
+textarea{
+	width: 470px;
+	height: 110px;
+	font: 14px normal normal uppercase helvetica, arial, serif;
+}
+
+input[type=submit]{
+	position:relative;
+	width:150px;
+	height:40px;
+	border-radius:20px;
+	margin-left: 150px;
+	border:0px;
+	background-color:#32A43E;
+	font: 14px normal normal uppercase helvetica, arial, serif;
+}
+
+p{
+	text-shadow:0 1px 0 #fff;
+	font-size:24px;
+	font-family: 'bebas_neueregular';
+}
+
+label{
+	margin:11px 20px 0 0;
+	font-size:16 px;
+	color:#b3aba1;
+	text-transform: uppercase;
+	text-shadow:0px 1px 0px #fff;
+}
